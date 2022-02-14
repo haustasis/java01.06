@@ -1,8 +1,15 @@
 package n1exercici3;
-/*
-Exercici 3. Modifica el punt anterior de manera que un dels arguments de f() no sigui parametritzat.
- */
+
 public class App {
 
+    public static void main(String[] args) {
 
+        System.out.println(GenericMethods.f("uno", "dos", true));
+        System.out.println("---------------");
+        System.out.println(GenericMethods.f(1, 2, "treintaytres"));
+        System.out.println("---------------");
+        System.out.println(GenericMethods.f(true, false, "cuarentaytres"));
+
+    }
 }
+
