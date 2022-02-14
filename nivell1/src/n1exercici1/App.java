@@ -1,8 +1,47 @@
 package n1exercici1;
-/*
-Exercici 1. Crea una classe anomenada NoGenericMethods que emmagatzemi tres objectes del mateix tipus,
- juntament amb els mètodes per a emmagatzemar i extreure aquests objectes i un constructor per a inicialitzar els tres.
-  Comprova que els arguments es poden posar en qualsevol posició en la crida al constructor.
- */
+
 public class App {
+
+    public static void main(String[] args) {
+
+        NoGenericMethods<Integer> mostra0 = new NoGenericMethods<>(1, 2, 3);
+        // Els arguments es poden posar en qualsevol posició al constructor perquè son del mateix tipus
+
+        // Valors inicialitzats al constructor
+        System.out.println(mostra0.getPrimer());
+        System.out.println(mostra0.getSegon());
+        System.out.println(mostra0.getTercer());
+        System.out.println("----------");
+
+        // Emmagatzemat nou valor amb setters
+        mostra0.setPrimer(11);
+        mostra0.setSegon(22);
+        mostra0.setTercer(33);
+
+        // Extreure amb getters
+        System.out.println(mostra0.getPrimer());
+        System.out.println(mostra0.getSegon());
+        System.out.println(mostra0.getTercer());
+        System.out.println("----------");
+
+        NoGenericMethods<String> mostra1 = new NoGenericMethods<>("primer", "segon", "tercer");
+        // Els arguments es poden posar en qualsevol posició al constructor perquè son del mateix tipus
+
+        // Valors inicialitzats al constructor
+        System.out.println(mostra1.getPrimer());
+        System.out.println(mostra1.getSegon());
+        System.out.println(mostra1.getTercer());
+        System.out.println("----------");
+
+        // Emmagatzemat nou valor amb setters
+        mostra1.setPrimer("onze");
+        mostra1.setSegon("dotze");
+        mostra1.setTercer("tretze");
+
+        // Extreure amb getters
+        System.out.println(mostra1.getPrimer());
+        System.out.println(mostra1.getSegon());
+        System.out.println(mostra1.getTercer());
+
+    }
 }

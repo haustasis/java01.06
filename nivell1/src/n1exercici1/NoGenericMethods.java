@@ -1,20 +1,38 @@
 package n1exercici1;
 
-public class NoGenericMethods {
+public class NoGenericMethods<T> {
 
-    public NoGenericMethods(int z) {
-        datosElemento = new Object[z];
+    private T primer;
+    private T segon;
+    private T tercer;
+
+    public NoGenericMethods(T primer, T segon, T tercer) {
+        this.primer = primer;
+        this.segon = segon;
+        this.tercer = tercer;
     }
 
-    public Object get(int i) {
-        return datosElemento[i];
+    public T getPrimer() {
+        return primer;
     }
 
-    public void add(Object o) {
-        datosElemento[i]=o;
-        i++;
+    public void setPrimer(T primer) {
+        this.primer = primer;
     }
 
-    private Object[] datosElemento;
-    private int i=0;
+    public T getSegon() {
+        return segon;
+    }
+
+    public void setSegon(T segon) {
+        this.segon = segon;
+    }
+
+    public T getTercer() {
+        return tercer;
+    }
+
+    public void setTercer(T tercer) {
+        this.tercer = tercer;
+    }
 }
