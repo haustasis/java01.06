@@ -6,4 +6,5 @@ public class GenericMethods {
         return "Primer element: " + first + "\nSegon element: " + second + "\nTercer element: " + third;
     }
 
+
 }

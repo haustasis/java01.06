@@ -7,5 +7,6 @@ public class App {
         System.out.println(GenericMethods.f(1, true, 'c'));
 
     }
+
 }
 
